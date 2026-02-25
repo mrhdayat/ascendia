@@ -1,0 +1,102 @@
+/* ===========================================
+   LOADING SCREEN
+   Cinematic Swiss-style loader with counter
+   =========================================== */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-loader);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ── Split panels for the reveal ── */
+.loader__panel {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: var(--black);
+}
+
+.loader__panel--top {
+  top: 0;
+}
+
+.loader__panel--bottom {
+  bottom: 0;
+}
+
+/* ── Content in center ── */
+.loader__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+}
+
+.loader__title {
+  font-size: clamp(var(--text-sm), 1.5vw, var(--text-base));
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-8);
+  overflow: hidden;
+}
+
+.loader__title span {
+  display: inline-block;
+}
+
+.loader__counter {
+  font-size: clamp(var(--text-5xl), 15vw, var(--text-6xl));
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: var(--space-6);
+}
+
+.loader__subtitle {
+  font-size: var(--text-xs);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  overflow: hidden;
+}
+
+.loader__subtitle span {
+  display: inline-block;
+}
+
+/* ── Red accent line ── */
+.loader__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--red);
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+/* ── Year marker ── */
+.loader__year {
+  position: absolute;
+  bottom: var(--space-7);
+  right: var(--grid-margin);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--grey-500);
+  z-index: 2;
+}

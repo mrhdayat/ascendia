@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCENDIA — Arsip Seni Modern Abad XX</title>
+  <meta name="description"
+    content="Arsip digital yayasan seni yang mendokumentasikan gerakan seni modern abad ke-20. Preservasi dan Akses untuk peneliti, akademisi, dan publik.">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/loader.css">
+  <link rel="stylesheet" href="/styles/navigation.css">
+  <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       CUSTOM CURSOR
+       ═══════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ═══════════════════════════════════════
+       LOADING SCREEN
+       Counter 000→100 + Red line + Panel split
+       ═══════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader__panel loader__panel--top"></div>
+    <div class="loader__panel loader__panel--bottom"></div>
+    <div class="loader__content">
+      <div class="loader__title" id="loaderTitle">
+        <span>A</span><span>S</span><span>C</span><span>E</span><span>N</span><span>D</span><span>I</span><span>A</span>
+      </div>
+      <div class="loader__counter" id="loaderCounter">000</div>
+      <div class="loader__subtitle" id="loaderSubtitle">
+        <span>Arsip Seni Modern</span>
+      </div>
+    </div>
+    <div class="loader__line" id="loaderLine"></div>
+    <div class="loader__year">EST. 1921</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       FLOATING NAVIGATION BAR
+       ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="/" class="nav__logo">Ascendia</a>
+    <div class="nav__links">
+      <a href="/" class="nav__link nav__link--active">Beranda</a>
+      <a href="/koleksi.html" class="nav__link">Koleksi</a>
+      <a href="/pameran.html" class="nav__link">Pameran</a>
+      <a href="/tentang.html" class="nav__link">Tentang</a>
+      <a href="/kontak.html" class="nav__link">Kontak</a>
+    </div>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+      <span class="nav__hamburger-line"></span>
+      <span class="nav__hamburger-line"></span>
+      <span class="nav__hamburger-line"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav__overlay" id="navOverlay">
+    <a href="/" class="nav__overlay-link"><span class="link-index">01</span>Beranda</a>
+    <a href="/koleksi.html" class="nav__overlay-link"><span class="link-index">02</span>Koleksi</a>
+    <a href="/pameran.html" class="nav__overlay-link"><span class="link-index">03</span>Pameran</a>
+    <a href="/tentang.html" class="nav__overlay-link"><span class="link-index">04</span>Tentang</a>
+    <a href="/kontak.html" class="nav__overlay-link"><span class="link-index">05</span>Kontak</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       PAGE TRANSITION OVERLAY
+       ═══════════════════════════════════════ -->
+  <div class="page-transition" id="pageTransition">
+    <div class="page-transition__line"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════ -->
+  <main id="mainContent" style="opacity: 0;">
+
+    <!-- ── Section 1: Hero ── -->
+    <section class="hero" id="hero">
+      <p class="hero__label reveal">Yayasan Seni — Arsip Digital</p>
+      <h1 class="hero__title" id="heroTitle">
+        <span class="line">Arsip</span>
+        <span class="line">Seni Modern</span>
+        <span class="line">Abad <span style="color: var(--red)">XX</span></span>
+      </h1>
+      <div class="hero__red-line" id="heroRedLine"></div>
+      <p class="hero__subtitle reveal">
+        Mendokumentasikan gerakan seni modern abad ke-20.<br>
+        Preservasi dan akses untuk peneliti, akademisi, serta publik.
+      </p>
+      <div class="hero__scroll-indicator">
+        <div class="hero__scroll-arrow"></div>
+        <span>Gulir untuk menjelajahi</span>
+      </div>
+      <span class="hero__year">1921 — 2000</span>
+    </section>
+
+    <!-- ── Section 2: Featured Collection Gallery ── -->
+    <section class="gallery section" id="gallery">
+      <div class="gallery__header">
+        <div>
+          <p class="section__label reveal">Koleksi Pilihan</p>
+          <h2 class="text-h2 reveal">Karya Unggulan</h2>
+        </div>
+        <a href="/koleksi.html" class="btn reveal"><span>Lihat Semua →</span></a>
+      </div>
+      <div class="gallery__track" id="galleryTrack">
+        <div class="gallery__card">
+          <div class="gallery__card-image art-1"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Komposisi Diagonal No. 7</p>
+            <p class="gallery__card-meta">Raden Saleh · 1938 · Cat Minyak</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <div class="gallery__card-image art-2"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Pagi di Pelabuhan</p>
+            <p class="gallery__card-meta">Affandi · 1954 · Ekspresionisme</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <div class="gallery__card-image art-3"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Struktur Linear III</p>
+            <p class="gallery__card-meta">Ahmad Sadali · 1967 · Abstrak</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <div class="gallery__card-image art-4"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Rotasi Cahaya</p>
+            <p class="gallery__card-meta">But Mochtar · 1972 · Kinetik</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <div class="gallery__card-image art-5"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Bidang dan Ruang</p>
+            <p class="gallery__card-meta">Popo Iskandar · 1961 · Geometris</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <div class="gallery__card-image art-6"></div>
+          <div class="gallery__card-info">
+            <p class="gallery__card-title">Metamorfosis Kota</p>
+            <p class="gallery__card-meta">Widayat · 1985 · Dekoratif</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 3: Manifesto / Vision ── -->
+    <section class="manifesto section" id="manifesto">
+      <p class="section__label reveal">Filosofi Kami</p>
+      <h2 class="manifesto__heading reveal">
+        <span class="red">Preservasi</span> &amp;<br>Akses
+      </h2>
+      <p class="manifesto__text" id="manifestoText">
+        Kami percaya bahwa seni adalah warisan universal yang harus dijaga dan dibagikan.
+        Setiap karya yang tersimpan dalam arsip ini adalah saksi bisu perjalanan estetika
+        dan pemikiran kreatif bangsa. Misi kami adalah menjembatani masa lalu dengan masa
+        kini, membuat arsip yang mudah diakses tanpa mengorbankan kualitas visual dokumentasi.
+        Melalui teknologi digital, kami memastikan bahwa generasi mendatang dapat mempelajari,
+        mengapresiasi, dan terinspirasi oleh gerakan seni modern abad ke-20.
+      </p>
+    </section>
+
+    <!-- ── Section 4: Statistics ── -->
+    <section class="stats section" id="stats">
+      <p class="section__label reveal">Dalam Angka</p>
+      <div class="stats__grid">
+        <div class="stats__item reveal">
+          <p class="stats__number" data-target="12847">0</p>
+          <p class="stats__label">Karya Terarsip</p>
+        </div>
+        <div class="stats__item reveal">
+          <p class="stats__number" data-target="342">0</p>
+          <p class="stats__label">Seniman Terdokumentasi</p>
+        </div>
+        <div class="stats__item reveal">
+          <p class="stats__number" data-target="89">0</p>
+          <p class="stats__label">Pameran Diselenggarakan</p>
+        </div>
+        <div class="stats__item reveal">
+          <p class="stats__number" data-target="79" data-prefix="1921–" data-suffix="">0</p>
+          <p class="stats__label">Tahun Periode</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 5: Infinite Marquee ── -->
+    <section class="marquee section" id="marquee">
+      <div class="marquee__row" id="marqueeRow1">
+        <span class="marquee__item">Biennale Venezia</span>
+        <span class="marquee__item">Documenta Kassel</span>
+        <span class="marquee__item">Asia Pacific Triennial</span>
+        <span class="marquee__item">Gwangju Biennale</span>
+        <span class="marquee__item">Jakarta Biennale</span>
+        <span class="marquee__item">Singapore Art Week</span>
+        <span class="marquee__item">Art Basel Hong Kong</span>
+        <span class="marquee__item">Biennale Venezia</span>
+        <span class="marquee__item">Documenta Kassel</span>
+        <span class="marquee__item">Asia Pacific Triennial</span>
+        <span class="marquee__item">Gwangju Biennale</span>
+        <span class="marquee__item">Jakarta Biennale</span>
+        <span class="marquee__item">Singapore Art Week</span>
+        <span class="marquee__item">Art Basel Hong Kong</span>
+      </div>
+      <div class="marquee__row" id="marqueeRow2">
+        <span class="marquee__item">Museum Nasional Indonesia</span>
+        <span class="marquee__item">Galeri Nasional</span>
+        <span class="marquee__item">UNESCO Heritage Award</span>
+        <span class="marquee__item">Asia Art Archive</span>
+        <span class="marquee__item">Tate Modern Partnership</span>
+        <span class="marquee__item">Guggenheim Fellowship</span>
+        <span class="marquee__item">Museum Nasional Indonesia</span>
+        <span class="marquee__item">Galeri Nasional</span>
+        <span class="marquee__item">UNESCO Heritage Award</span>
+        <span class="marquee__item">Asia Art Archive</span>
+        <span class="marquee__item">Tate Modern Partnership</span>
+        <span class="marquee__item">Guggenheim Fellowship</span>
+      </div>
+    </section>
+
+    <!-- ── Section 6: Footer ── -->
+    <footer class="footer" id="footer">
+      <div class="footer__top-line" id="footerLine"></div>
+      <div class="footer__grid">
+        <div class="reveal">
+          <p class="footer__title">Tentang Yayasan</p>
+          <p class="footer__description">
+            Yayasan Ascendia didirikan untuk melestarikan dan mendokumentasikan
+            gerakan seni modern Indonesia sepanjang abad ke-20. Kami bekerja sama
+            dengan museum, universitas, dan komunitas seni di seluruh dunia.
+          </p>
+        </div>
+        <div class="reveal">
+          <p class="footer__title">Navigasi</p>
+          <a href="/" class="footer__link">Beranda</a>
+          <a href="/koleksi.html" class="footer__link">Koleksi</a>
+          <a href="/pameran.html" class="footer__link">Pameran</a>
+          <a href="/tentang.html" class="footer__link">Tentang</a>
+          <a href="/kontak.html" class="footer__link">Kontak</a>
+        </div>
+        <div class="reveal">
+          <p class="footer__title">Kontak</p>
+          <a href="mailto:info@ascendia.org" class="footer__link">info@ascendia.org</a>
+          <a href="tel:+62215551234" class="footer__link">+62 21 555 1234</a>
+          <a class="footer__link">Jakarta, Indonesia</a>
+        </div>
+        <div class="reveal">
+          <p class="footer__title">Newsletter</p>
+          <p class="footer__description" style="margin-bottom: var(--space-4);">
+            Terima informasi pameran dan koleksi terbaru.
+          </p>
+          <div style="display: flex; border: 1px solid var(--grey-600);">
+            <input type="email" placeholder="Email Anda"
+              style="flex:1; padding: 10px 12px; border:none; background:transparent; color:var(--white); font-family:var(--font-primary); font-size:var(--text-sm); outline:none; cursor:none;">
+            <button class="btn--red"
+              style="padding: 10px 16px; background:var(--red); color:var(--white); font-size:var(--text-xs); font-weight:700; letter-spacing:0.1em; cursor:none; font-family:var(--font-primary); border:none;">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 Yayasan Ascendia. Semua Hak Dilindungi.</span>
+        <span>Dirancang dengan Prinsip Swiss Style</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

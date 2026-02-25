@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.gl
+ehthumbs_vista.gl
+[Tt]humbs.db
+
+# Vite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.agent
+animation.md

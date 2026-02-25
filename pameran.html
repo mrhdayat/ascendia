@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pameran — ASCENDIA</title>
+  <meta name="description"
+    content="Pameran seni modern dari arsip digital Ascendia. Jelajahi pameran masa lalu dan mendatang.">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/navigation.css">
+  <link rel="stylesheet" href="/styles/pameran.css">
+  <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body>
+  <div class="cursor" id="cursor"></div>
+
+  <nav class="nav nav--visible" id="nav">
+    <a href="/" class="nav__logo">Ascendia</a>
+    <div class="nav__links">
+      <a href="/" class="nav__link">Beranda</a>
+      <a href="/koleksi.html" class="nav__link">Koleksi</a>
+      <a href="/pameran.html" class="nav__link nav__link--active">Pameran</a>
+      <a href="/tentang.html" class="nav__link">Tentang</a>
+      <a href="/kontak.html" class="nav__link">Kontak</a>
+    </div>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+      <span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span
+        class="nav__hamburger-line"></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay">
+    <a href="/" class="nav__overlay-link"><span class="link-index">01</span>Beranda</a>
+    <a href="/koleksi.html" class="nav__overlay-link"><span class="link-index">02</span>Koleksi</a>
+    <a href="/pameran.html" class="nav__overlay-link"><span class="link-index">03</span>Pameran</a>
+    <a href="/tentang.html" class="nav__overlay-link"><span class="link-index">04</span>Tentang</a>
+    <a href="/kontak.html" class="nav__overlay-link"><span class="link-index">05</span>Kontak</a>
+  </div>
+  <div class="page-transition" id="pageTransition">
+    <div class="page-transition__line"></div>
+  </div>
+
+  <main>
+    <section class="pameran-hero" style="padding-bottom: var(--space-4);">
+      <p class="section__label reveal">Program Pameran</p>
+      <h1 class="pameran-hero__title reveal" style="margin-bottom: var(--space-4);">Pameran</h1>
+      <p class="hero__subtitle reveal"
+        style="font-size: var(--text-2xl); color: var(--grey-400); max-width: 800px; margin-bottom: var(--space-8);">
+        Platform retrospektif yang merayakan capaian estetika dan diskursus seni rupa Nusantara.
+        Temukan catatan kuratorial dari pameran masa lalu dan jadwalkan kunjungan Anda berikutnya.
+      </p>
+      <div class="accent-line reveal"></div>
+    </section>
+
+    <section class="exhibitions">
+      <div class="exhibitions__grid" id="exhibitionsGrid">
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-1"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">15 Mar — 20 Jun 2024</p>
+              <h3 class="exhibition-card__name">Garis dan Bidang</h3>
+              <p class="exhibition-card__desc">Eksplorasi seni geometris Indonesia dari era 1960-an hingga kini.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Garis dan Bidang</p>
+            <p class="exhibition-card__info-meta">15 Maret — 20 Juni 2024</p>
+          </div>
+        </div>
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-2"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">01 Sep — 30 Nov 2023</p>
+              <h3 class="exhibition-card__name">Cahaya Timur</h3>
+              <p class="exhibition-card__desc">Perjalanan visual seniman Asia Tenggara dalam konteks global.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Cahaya Timur</p>
+            <p class="exhibition-card__info-meta">1 September — 30 November 2023</p>
+          </div>
+        </div>
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-3"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">10 Jan — 28 Feb 2023</p>
+              <h3 class="exhibition-card__name">Abstraksi Nusantara</h3>
+              <p class="exhibition-card__desc">Peta gerakan abstrak dari Sabang sampai Merauke.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Abstraksi Nusantara</p>
+            <p class="exhibition-card__info-meta">10 Januari — 28 Februari 2023</p>
+          </div>
+        </div>
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-4"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">05 Jul — 15 Sep 2022</p>
+              <h3 class="exhibition-card__name">Warna Revolusi</h3>
+              <p class="exhibition-card__desc">Seni sebagai alat ekspresi politik di masa kemerdekaan.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Warna Revolusi</p>
+            <p class="exhibition-card__info-meta">5 Juli — 15 September 2022</p>
+          </div>
+        </div>
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-5"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">20 Apr — 10 Jun 2022</p>
+              <h3 class="exhibition-card__name">Monokrom</h3>
+              <p class="exhibition-card__desc">Keindahan dalam keterbatasan warna hitam dan putih.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Monokrom</p>
+            <p class="exhibition-card__info-meta">20 April — 10 Juni 2022</p>
+          </div>
+        </div>
+        <div class="exhibition-card reveal">
+          <div class="exhibition-card__image">
+            <div class="exhibition-card__image-bg ex-6"></div>
+            <div class="exhibition-card__overlay">
+              <p class="exhibition-card__date">01 Feb — 30 Mar 2021</p>
+              <h3 class="exhibition-card__name">Suara Diam</h3>
+              <p class="exhibition-card__desc">Instalasi multimedia yang mengeksplorasi keheningan dan kontemplasi.</p>
+            </div>
+          </div>
+          <div class="exhibition-card__info">
+            <p class="exhibition-card__info-title">Suara Diam</p>
+            <p class="exhibition-card__info-meta">1 Februari — 30 Maret 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+      <div class="timeline__header">
+        <p class="section__label reveal">Linimasa</p>
+        <h2 class="text-h2 reveal">Perjalanan Pameran</h2>
+      </div>
+      <div class="timeline__line">
+        <div class="timeline__progress" id="timelineProgress"></div>
+      </div>
+      <div class="timeline__events">
+        <div class="timeline__event reveal">
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">1921</p>
+            <h3 class="timeline__event-title">Pendirian Yayasan</h3>
+            <p class="timeline__event-desc">Langkah perdana dalam mendokumentasikan seniman-seniman yang kelak menjadi
+              maestro. Dimulai dari sebuah inisiatif independen di pusat kota Jakarta untuk melindungi karya dari
+              kerusakan zaman.</p>
+          </div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-spacer"></div>
+        </div>
+        <div class="timeline__event reveal">
+          <div class="timeline__event-spacer"></div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">1945</p>
+            <h3 class="timeline__event-title">Seni & Kemerdekaan</h3>
+            <p class="timeline__event-desc">Pameran manifesto yang menyoroti peran seniman dalam revolusi fisik.
+              Memperlihatkan karya-karya ekspresionis yang merekam semangat perjuangan bangsa secara otentik.</p>
+          </div>
+        </div>
+        <div class="timeline__event reveal">
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">1962</p>
+            <h3 class="timeline__event-title">Ekspansi Global</h3>
+            <p class="timeline__event-desc">Koleksi unggulan kami tampil perdana di panggung internasional melalui
+              paviliun khusus di Biennale Venezia, membuka wacana seni Asia Tenggara kepada kritikus Eropa.</p>
+          </div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-spacer"></div>
+        </div>
+        <div class="timeline__event reveal">
+          <div class="timeline__event-spacer"></div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">1985</p>
+            <h3 class="timeline__event-title">Dialog Kontemporer</h3>
+            <p class="timeline__event-desc">Peluncuran program trilogi pameran yang mengonfrontasi seni modern
+              tradisional dengan kelahiran gerakan seni instalasi dan performans di era Orde Baru.</p>
+          </div>
+        </div>
+        <div class="timeline__event reveal">
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">2000</p>
+            <h3 class="timeline__event-title">Inisiatif Digitalisasi</h3>
+            <p class="timeline__event-desc">Merespons pergantian milenium, kami memulai proyek digitalisasi massal.
+              Ribuan kanvas dan arsip kertas dipindai menggunakan fotogrametri resolusi giga-piksel.</p>
+          </div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-spacer"></div>
+        </div>
+        <div class="timeline__event reveal">
+          <div class="timeline__event-spacer"></div>
+          <div class="timeline__event-dot"></div>
+          <div class="timeline__event-content">
+            <p class="timeline__event-year">2024</p>
+            <h3 class="timeline__event-title">Akses Universal</h3>
+            <p class="timeline__event-desc">Peluncuran platform web modern yang memungkinkan mahasiswa, peneliti, dan
+              publik mengakses arsip penuh tanpa batasan geografis. Demokratisasi seni yang sesungguhnya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top-line" style="width:100%"></div>
+      <div class="footer__bottom">
+        <span>© 2024 Yayasan Ascendia</span>
+        <span>Swiss Style Design System</span>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/subpage.js"></script>
+</body>
+
+</html>
